@@ -11,8 +11,7 @@ import SwiftUI
 struct ticTacToeAIApp: App {
     var body: some Scene {
         WindowGroup {
-            GameView()
-//                .colorScheme(.dark)
+            ContentView()
         }
     }
 }

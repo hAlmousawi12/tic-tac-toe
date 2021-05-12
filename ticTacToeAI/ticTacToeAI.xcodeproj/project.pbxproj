@@ -14,6 +14,8 @@
 		9769AD382642811E00500F89 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9769AD372642811D00500F89 /* Alerts.swift */; };
 		9769AD3A2642B65200500F89 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9769AD392642B65200500F89 /* GameViewModel.swift */; };
 		9769AD3C2642B86E00500F89 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9769AD3B2642B86E00500F89 /* enums.swift */; };
+		978C130E264C577400B58A28 /* selectDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978C130D264C577400B58A28 /* selectDifficulty.swift */; };
+		978C1310264C5D4F00B58A28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978C130F264C5D4F00B58A28 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9769AD372642811D00500F89 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		9769AD392642B65200500F89 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		9769AD3B2642B86E00500F89 /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
+		978C130D264C577400B58A28 /* selectDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectDifficulty.swift; sourceTree = "<group>"; };
+		978C130F264C5D4F00B58A28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				9769AD28264275F800500F89 /* ticTacToeAIApp.swift */,
+				978C130F264C5D4F00B58A28 /* ContentView.swift */,
+				978C130D264C577400B58A28 /* selectDifficulty.swift */,
 				9769AD2A264275F800500F89 /* GameView.swift */,
 				9769AD3B2642B86E00500F89 /* enums.swift */,
 				9769AD392642B65200500F89 /* GameViewModel.swift */,
@@ -148,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9769AD3A2642B65200500F89 /* GameViewModel.swift in Sources */,
+				978C130E264C577400B58A28 /* selectDifficulty.swift in Sources */,
+				978C1310264C5D4F00B58A28 /* ContentView.swift in Sources */,
 				9769AD3C2642B86E00500F89 /* enums.swift in Sources */,
 				9769AD2B264275F800500F89 /* GameView.swift in Sources */,
 				9769AD382642811E00500F89 /* Alerts.swift in Sources */,

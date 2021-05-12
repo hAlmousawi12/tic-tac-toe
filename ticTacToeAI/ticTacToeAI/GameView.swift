@@ -28,18 +28,12 @@ struct GameView: View {
     }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        GameView()
-    }
-}
-
 struct GameSquareView: View {
     var geometry: GeometryProxy
+    var VM: GameViewModel
     var body: some View {
         Rectangle()
-            .foregroundColor(Color("red"))
+            .foregroundColor(VM.color)
             .frame(width: geometry.size.width/3 - 15, height: geometry.size.width/3 - 15)
             .cornerRadius(15)
     }
@@ -62,13 +56,13 @@ struct GameBoard: View {
         LazyVGrid(columns: VM.columns) {
             ForEach(0 ..< 9) { i in
                 ZStack {
-                    GameSquareView(geometry: geometry)
+                    GameSquareView(geometry: geometry, VM: VM)
                     
                     PlayerIndecator(systemImageName: VM.moves[i]?.indicator ?? "")
                 }.onTapGesture {
-                    VM.proccessPlayerMove(for: i)
+                    VM.proccesPlayerMove(for: i)
                 }
-                .shadow(color: Color("red").opacity(0.4), radius: 5, x: 0, y: 5)
+                .shadow(color: VM.color.opacity(0.4), radius: 5, x: 0, y: 5)
             }
         }
     }
